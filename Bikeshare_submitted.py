@@ -81,9 +81,8 @@ def load_data(city, month, day):
         print("Applying filters by day")
 #         print(df.head(5))
         df = df[df['day'] == day.title()]
-
     print('*'*120)
-
+    print("Successfully loaded the data for the specific city with appropriate filters")
     return df
 
 
