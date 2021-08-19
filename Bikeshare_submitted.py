@@ -250,6 +250,8 @@ def main():
         raw_data = input('\nWould you like to see the raw data? Enter yes or no.\n')
         if(raw_data.lower() == "yes" or raw_data.lower() == "no"):
             if(raw_data.lower() == 'yes'):
+                if city.lower() == 'washington':
+                    print("Warning - Washington city has not sufficient user data to display")
                 last_left_mark = raw_data_display(df,last_mark)
             else:
                 print("Sure , You opted to not view the Raw data")
