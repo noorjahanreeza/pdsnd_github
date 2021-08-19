@@ -188,7 +188,9 @@ def user_stats(df,city_name):
     print('*'*120)
 
 def raw_data_display(df,last_mark):
-    
+    """
+    Displays the raw data of the specific inputted city to visualize and understand the data better
+    """
     print('*'*50+"Displaying the Raw Data input"+'*'*50)
 
     if last_mark!=0:
@@ -215,7 +217,9 @@ def raw_data_display(df,last_mark):
 
 
 def main():
-
+    """
+    Main function that gets input from the user and responds with appropriate statistical data
+    """
     while True:
         last_mark = 0
         city, month, day = get_filters()
