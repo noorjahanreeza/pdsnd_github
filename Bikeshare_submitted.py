@@ -161,7 +161,10 @@ def user_stats(df,city_name):
     start_time = time.time()
 
     # Display counts of user types
-    User_types_count = df['User Type'].value_counts()
+    try:
+        User_types_count = df['User Type'].value_counts()
+    except KeyError:
+        print("There is no User Type in the specified city of {}".format(city_name.title()))
 
     # Display counts of Gender
     try:
@@ -250,7 +253,7 @@ def main():
         if(raw_data.lower() == "yes" or raw_data.lower() == "no"):
             if(raw_data.lower() == 'yes'):
                 if city.lower() == 'washington':
-                    print("Warning - Washington city has not sufficient user data to display")
+                    print("Pre-Warning - Washington city has not sufficient user data to display")
                 last_left_mark = raw_data_display(df,last_mark)
             else:
                 print("Sure , You opted to not view the Raw data")
