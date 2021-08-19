@@ -6,6 +6,12 @@
 ### Project Title
 Bikeshare project - Programming for data science with python
 
+### Requirements
+This project used versions :
+python - 3.7.7
+pandas -  1.3.0
+numpy - 1.21.0
+
 ### Description
 In this project , the user is allowed to have an interactive experience with the US bikeshare systems for these three major cities - Chicago , Washington and New york City. This program outputs detailed statistical information and raw data which helps in deriving actionable insights.
 
